@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+  body{
+    background: #222;
+    color: #fff;
+    font-family: system-ui;
+  }
+  .cruds{
+    width: 88%;
+    margin: auto;
+  }
+  .head{
+    text-align: center;
+    text-transform: uppercase;
+    margin: 10px 0;
+  }
+  .text-date{
+    color: #fff;
+    display: flex;
+    gap: 35px;
+  }
+  input{
+    width: 100%;
+    height: 30px;
+    outline: none;
+    border: none;
+    background: #141414;
+    margin: 4px 0;
+    border-radius: 4px;
+    color: #fff;
+  }
+  .price{
+    display: flex;
+    justify-content: space-between;
+    margin: 4px 0;
+  }
+  input:focus{
+    background: #000000;
+    transform: scale(1.1);
+  }
+  .price input{
+    width: 20%;
+  }
+  #total{
+    background: #b80000;
+    padding: 4px 2px;
+    border-radius: 80px 80px 80px 80px;
+  }
+  #total::before{
+    content:'total: ';
+  }
+  button{
+    width: 100%;
+    height: 30px;
+    border: none;
+    border-radius: 20px;
+    background: #084e94;
+    color: white;
+  }
+  button:hover{
+    background: #3373ea;
+    transform: scale(1.01);
+  }
+  .outputs input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .outputs button{
+    width: 49%;
+    margin: 8px 0;
+  }
+  hr{
+    border: none;
+    border-bottom: 0.5px solid white;
+    margin: 10px;
+  }
+  .table button{
+    margin-bottom: 15px;
+  }
+  .table table{
+    width: 100%;
+    text-align: center;
+  }
+  .table table tr button{
+    background: #00761e;
+  }
+  .table table tr button:hover{
+    background: #02a41d; 
+  }

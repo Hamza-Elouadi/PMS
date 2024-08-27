@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>PMS</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <div class="cruds">
+    <div class="head">
+      <h2>PMS</h2>
+      <p>product management system</p>
+    </div>
+    <div class="inputs">
+      <div class="text-date">
+        <input type="text" placeholder="title" id="title">
+        <input class="date" type="date" id="datemin" name="datemin" min="2000-01-02">
+      </div>
+      <div class="price">
+        <input onkeyup="getTotal()" type="number" placeholder="price" id="price">
+        <input onkeyup="getTotal()" type="number" placeholder="taxes" id="taxes">
+        <input onkeyup="getTotal()" type="number" placeholder="ads" id="ads">
+        <input onkeyup="getTotal()" type="number" placeholder="discount" id="discount">
+        <small id="total"></small>
+      </div>
+      <input type="number" placeholder="count" id="count">
+      <input type="text" placeholder="category" id="category">
+      <button id="submit">Create</button>
+    </div>
+    <hr>
+    <div class="outputs">
+      <input type="text" placeholder="search" id="search">
+      <button id="search-title">Search By Title</button>
+      <button id="search-category">Search By Category</button>
+    </div>
+    <div class="table">
+      <hr>
+      <button id="delete-all">Delete All</button>
+      <table>
+        <hr>
+        <tr>
+          <th>ID</th>
+          <th>DATES</th> 
+          <th>TITLE</th>
+          <th>PRICE</th>
+          <th>TEXES</th>
+          <th>ADS</th>
+          <th>DISCOUNT</th>
+          <th>TOTAL</th>
+          <th>CATEGORY</th>
+          <th>DELATE</th>
+        </tr>
+      <tbody id="tbody">
+ 
+      </tbody>
+      </table>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
